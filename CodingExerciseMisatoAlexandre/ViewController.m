@@ -48,7 +48,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+//Buttons triggering text and image to take actions
 - (IBAction)pressMeBtniPhone:(id)sender {
     
     self.responseLabeliPhone.text=@"Thanks!";
@@ -61,6 +61,7 @@
     self.responseImageiPad.hidden=NO;
 }
 
+//Buttons triggering to send notifications
 - (IBAction)sendNotificationBtniPad:(id)sender {
     //Ivoke postNotification method in Dictionary
     Dictionary *myDictionary =[[Dictionary alloc]init];
