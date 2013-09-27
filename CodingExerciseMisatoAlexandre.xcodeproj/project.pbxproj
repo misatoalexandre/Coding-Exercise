@@ -19,6 +19,10 @@
 		53C701C617DB8959009DC894 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C701C417DB8959009DC894 /* MainStoryboard_iPhone.storyboard */; };
 		53C701C917DB8959009DC894 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C701C717DB8959009DC894 /* MainStoryboard_iPad.storyboard */; };
 		53C701CC17DB8959009DC894 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C701CB17DB8959009DC894 /* ViewController.m */; };
+		53C701D317DB8A3C009DC894 /* Screen Shot 2013-09-07 at 12.15.21 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C701D217DB8A3C009DC894 /* Screen Shot 2013-09-07 at 12.15.21 AM.png */; };
+		53C701D517DB8F79009DC894 /* Screen Shot 2013-09-07 at 12.44.26 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 53C701D417DB8F79009DC894 /* Screen Shot 2013-09-07 at 12.44.26 PM.png */; };
+		53C701D817DB9063009DC894 /* Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C701D717DB9063009DC894 /* Dictionary.m */; };
+		53C701DB17DB9077009DC894 /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C701DA17DB9077009DC894 /* EmptyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,12 @@
 		53C701C817DB8959009DC894 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		53C701CA17DB8959009DC894 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		53C701CB17DB8959009DC894 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		53C701D217DB8A3C009DC894 /* Screen Shot 2013-09-07 at 12.15.21 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2013-09-07 at 12.15.21 AM.png"; sourceTree = "<group>"; };
+		53C701D417DB8F79009DC894 /* Screen Shot 2013-09-07 at 12.44.26 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2013-09-07 at 12.44.26 PM.png"; sourceTree = "<group>"; };
+		53C701D617DB9063009DC894 /* Dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dictionary.h; sourceTree = "<group>"; };
+		53C701D717DB9063009DC894 /* Dictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dictionary.m; sourceTree = "<group>"; };
+		53C701D917DB9077009DC894 /* EmptyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewController.h; sourceTree = "<group>"; };
+		53C701DA17DB9077009DC894 /* EmptyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +99,12 @@
 				53C701BC17DB8959009DC894 /* AppDelegate.m */,
 				53C701C417DB8959009DC894 /* MainStoryboard_iPhone.storyboard */,
 				53C701C717DB8959009DC894 /* MainStoryboard_iPad.storyboard */,
+				53C701D917DB9077009DC894 /* EmptyViewController.h */,
+				53C701DA17DB9077009DC894 /* EmptyViewController.m */,
 				53C701CA17DB8959009DC894 /* ViewController.h */,
 				53C701CB17DB8959009DC894 /* ViewController.m */,
+				53C701D617DB9063009DC894 /* Dictionary.h */,
+				53C701D717DB9063009DC894 /* Dictionary.m */,
 				53C701B317DB8959009DC894 /* Supporting Files */,
 			);
 			path = CodingExerciseMisatoAlexandre;
@@ -99,6 +113,8 @@
 		53C701B317DB8959009DC894 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				53C701D417DB8F79009DC894 /* Screen Shot 2013-09-07 at 12.44.26 PM.png */,
+				53C701D217DB8A3C009DC894 /* Screen Shot 2013-09-07 at 12.15.21 AM.png */,
 				53C701B417DB8959009DC894 /* CodingExerciseMisatoAlexandre-Info.plist */,
 				53C701B517DB8959009DC894 /* InfoPlist.strings */,
 				53C701B817DB8959009DC894 /* main.m */,
@@ -167,6 +183,8 @@
 				53C701C317DB8959009DC894 /* Default-568h@2x.png in Resources */,
 				53C701C617DB8959009DC894 /* MainStoryboard_iPhone.storyboard in Resources */,
 				53C701C917DB8959009DC894 /* MainStoryboard_iPad.storyboard in Resources */,
+				53C701D317DB8A3C009DC894 /* Screen Shot 2013-09-07 at 12.15.21 AM.png in Resources */,
+				53C701D517DB8F79009DC894 /* Screen Shot 2013-09-07 at 12.44.26 PM.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +198,8 @@
 				53C701B917DB8959009DC894 /* main.m in Sources */,
 				53C701BD17DB8959009DC894 /* AppDelegate.m in Sources */,
 				53C701CC17DB8959009DC894 /* ViewController.m in Sources */,
+				53C701D817DB9063009DC894 /* Dictionary.m in Sources */,
+				53C701DB17DB9077009DC894 /* EmptyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

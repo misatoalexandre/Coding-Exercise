@@ -1,23 +1,155 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4488.2" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="jty-Rx-lxa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="4">
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Screen Shot 2013-09-07 at 12.15.21 AM.png" translatesAutoresizingMaskIntoConstraints="NO" id="RrX-dc-owM">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="966"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="966" id="sBx-5S-stB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Universal App: iPad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFL-Qe-dPU">
+                                <rect key="frame" x="26" y="20" width="570" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="570" id="P4m-rn-J10"/>
+                                    <constraint firstAttribute="height" constant="96" id="Ze1-pY-ezf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfG-qb-0mY">
+                                <rect key="frame" x="379" y="410" width="94" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Press Me!">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressMeBtniPad:" destination="2" eventType="touchUpInside" id="F9o-ot-5vm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLP-wY-8wD">
+                                <rect key="frame" x="20" y="461" width="812" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="812" id="DUQ-A6-Khf"/>
+                                    <constraint firstAttribute="height" constant="140" id="xsV-YP-vhe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="55"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxn-EV-aMi">
+                                <rect key="frame" x="560" y="46" width="188" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="XRC-ZP-HH1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Send Notification">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendNotificationBtniPad:" destination="2" eventType="touchUpInside" id="mBC-KO-qOu"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Screen Shot 2013-09-07 at 12.44.26 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="osW-fs-cKC">
+                                <rect key="frame" x="311" y="763" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Q4W-Ge-sex"/>
+                                    <constraint firstAttribute="width" constant="240" id="cvd-5Y-NQ5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RrX-dc-owM" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="E3a-bE-WRL"/>
+                            <constraint firstItem="RFL-Qe-dPU" firstAttribute="top" secondItem="5" secondAttribute="top" constant="20" symbolic="YES" type="default" id="EWp-7w-Ag9"/>
+                            <constraint firstItem="RrX-dc-owM" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="K18-ai-JtA"/>
+                            <constraint firstAttribute="trailing" secondItem="cxn-EV-aMi" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="OAd-Qv-hoA"/>
+                            <constraint firstItem="nLP-wY-8wD" firstAttribute="top" secondItem="YfG-qb-0mY" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Xkc-0P-1pi"/>
+                            <constraint firstItem="osW-fs-cKC" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="311" id="eut-oq-hIY"/>
+                            <constraint firstItem="RFL-Qe-dPU" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="26" id="gM8-Hz-XET"/>
+                            <constraint firstItem="YfG-qb-0mY" firstAttribute="centerX" secondItem="nLP-wY-8wD" secondAttribute="centerX" type="default" id="jgo-l9-kf5"/>
+                            <constraint firstItem="YfG-qb-0mY" firstAttribute="top" secondItem="5" secondAttribute="top" constant="410" id="k3I-7o-upz"/>
+                            <constraint firstItem="RrX-dc-owM" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="khQ-Rv-Wun"/>
+                            <constraint firstAttribute="bottom" secondItem="osW-fs-cKC" secondAttribute="bottom" constant="69" id="lYw-TF-Iqz"/>
+                            <constraint firstItem="cxn-EV-aMi" firstAttribute="top" secondItem="5" secondAttribute="top" constant="46" id="u4u-ZC-WRk"/>
+                            <constraint firstItem="nLP-wY-8wD" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="uiP-YC-Bnm"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="kW9-hn-ML8">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="0ck-wa-YfB">
+                            <connections>
+                                <segue destination="AxF-5e-6cF" kind="push" identifier="next" id="BtI-lm-dUF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="responseImageiPad" destination="osW-fs-cKC" id="2Zf-aM-WXz"/>
+                        <outlet property="responseLabeliPad" destination="nLP-wY-8wD" id="KaJ-oD-tJQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1633" y="-399"/>
+        </scene>
+        <!--Empty View Controller-->
+        <scene sceneID="6YY-LI-xby">
+            <objects>
+                <viewController id="AxF-5e-6cF" customClass="EmptyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2dh-fu-a09">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eef-EJ-f6J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jV5-IB-PFO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2577" y="-389"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8A0-R9-HC6">
+            <objects>
+                <navigationController id="jty-Rx-lxa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w1G-Ll-gRY">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="GdO-sl-Zs6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIe-C3-Kcf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="-399"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2013-09-07 at 12.15.21 AM.png" width="457" height="335"/>
+        <image name="Screen Shot 2013-09-07 at 12.44.26 PM.png" width="219" height="188"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
